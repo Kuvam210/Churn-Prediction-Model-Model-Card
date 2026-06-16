@@ -1,0 +1,25 @@
+{
+  "snapshot_date": "2025-09-30",
+  "threshold": 0.4,
+  "baseline_logistic_regression": {
+    "model": "Logistic Regression (baseline)",
+    "val_roc_auc": 0.885,
+    "val_pr_auc": 0.8696,
+    "val_f1": 0.7923,
+    "val_precision": 0.747,
+    "val_recall": 0.8435
+  },
+  "final_xgboost": {
+    "model": "XGBoost",
+    "val_roc_auc": 0.8765,
+    "val_pr_auc": 0.85,
+    "val_f1": 0.7717,
+    "val_precision": 0.7317,
+    "val_recall": 0.8163,
+    "test_roc_auc": 0.8616,
+    "test_pr_auc": 0.8276,
+    "test_f1": 0.8078,
+    "test_precision": 0.7592,
+    "test_recall": 0.8631
+  }
+}
