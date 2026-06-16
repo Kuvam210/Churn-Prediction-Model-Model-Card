@@ -69,7 +69,7 @@ Gradient Boosting assigns 57% of its feature importance to `recency_days` alone 
 
 ## ROC & Precision-Recall curves
 
-![ROC and PR curves](figures/02_roc_pr_curves.png)
+![ROC and PR curves](Figures/01_roc_pr_curves.png)
 
 Both models clear 0.87 AUC on validation. LR extends its lead on the held-out test set (0.8932 vs 0.8646) and maintains a stronger PR curve across the high-recall operating range — exactly where the retention team works.
 
@@ -77,7 +77,7 @@ Both models clear 0.87 AUC on validation. LR extends its lead on the held-out te
 
 ## Confusion matrices — test set (threshold = 0.40)
 
-![Confusion matrices](figures/03_confusion_matrices.png)
+![Confusion matrices](Figures/03_confusion_matrix.png)
 
 At threshold 0.40, Logistic Regression catches **148 of 168 true churners** (recall 0.881) while producing 40 false positives. Gradient Boosting misses 8 more churners and generates 5 more unnecessary campaigns — strictly worse on both error types.
 
@@ -85,7 +85,7 @@ At threshold 0.40, Logistic Regression catches **148 of 168 true churners** (rec
 
 ## Threshold selection
 
-![Threshold sweep](figures/04_threshold_sweep.png)
+![Threshold sweep](Figures/02_threshold_analysis.png)
 
 The threshold was deliberately set to **0.40** rather than the standard 0.50:
 
@@ -98,7 +98,7 @@ The 25–100× cost asymmetry justifies a recall-biased operating point. At 0.40
 
 ## Feature importance
 
-![Feature importance](figures/05_feature_importance.png)
+![SHAP importance](Figures/05_shap_importance.png)
 
 The two models surface different signals:
 
